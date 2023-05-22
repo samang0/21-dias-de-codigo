@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
+body{
+    background-color: #111;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 5rem;
+    text-align: center;
+}
+.space {
+    margin-right: 30px; /* Defina o valor desejado para o espaçamento */
+}
+.container > span{
+    animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow{
+    0%, 100%{
+        color: purple;
+        text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+    }
+10%, 90%{
+    color: #ffffff;
+    text-shadow: none;
+    }
+} 
+.container > span:nth-child(2){
+    animation-delay: 0.300s;
+}
+.container > span:nth-child(3){
+    animation-delay: 0.5s;
+}
+.container > span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.container > span:nth-child(5){
+    animation-delay: 1s;
+}
+.container > span:nth-child(6){
+    animation-delay: 1.25s;
+}
+.container > span:nth-child(7){
+    animation-delay: 1.50s;
+}
+.container > span:nth-child(8){
+    animation-delay: 1.75s;
+}
+.container > span:nth-child(9){
+    animation-delay: 2s;
+}
+.container > span:nth-child(10){
+    animation-delay: 2.25s;
+   
+}
+.container > span:nth-child(11){
+    animation-delay: 2.50s;
+   
+}
