@@ -12,7 +12,7 @@ body{
     text-align: center;
 }
 .space {
-    margin-right: 30px; /* Defina o valor desejado para o espaçamento */
+    margin-right: 30px;
 }
 .container > span{
     animation: glow 3s ease-in-out infinite;
