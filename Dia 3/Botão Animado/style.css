@@ -1,0 +1,57 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background: #262626;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.pulsar img{
+    width: 180px;
+    height: 180px;
+    background: transparent;
+}
+.pulsar{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #126450;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.pulsar::before, .pulsar::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -60px;
+    right: -60px;
+    top: -60px;
+    bottom: -60px;
+    border-radius: 50%;
+    border: 2px solid #126450;
+    animation: animar 1.5s linear infinite;
+    opacity: 0;
+}
+.pulsar::after{
+    animation-delay: .5s;
+}
+
+@keyframes animar {
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
